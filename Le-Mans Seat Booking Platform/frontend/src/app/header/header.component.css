@@ -1,0 +1,7 @@
+a{
+    text-decoration: none;
+    color: royalblue;
+}
+a:hover{
+    text-shadow: 0 0 6px royalblue;
+}

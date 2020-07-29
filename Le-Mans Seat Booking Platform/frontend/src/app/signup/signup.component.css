@@ -1,0 +1,11 @@
+button{
+    background-color: royalblue;
+    color: black;
+}
+button:hover{
+    box-shadow: 0 0 5px royalblue;
+    color: black;
+}
+input:active{
+    text-shadow: 0 0 5px royalblue;
+}
