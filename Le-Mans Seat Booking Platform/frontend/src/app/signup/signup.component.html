@@ -7,8 +7,7 @@
                     <div class="form-group col">
                         <label>Title</label>
                         <select formControlName="title" class="form-control"
-                            [ngClass]="{ 'is-invalid': submitted && f.title.errors }" 
-                            [(ngModel)]='profile.title'>
+                            [ngClass]="{ 'is-invalid': submitted && f.title.errors }" [(ngModel)]='profile.title'>
                             <option value=""></option>
                             <option value="Mr">Mr</option>
                             <option value="Mrs">Mrs</option>
@@ -22,7 +21,7 @@
                     <div class="form-group col-5">
                         <label>First Name</label>
                         <input type="text" formControlName="firstName" class="form-control"
-                            [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" 
+                            [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }"
                             [(ngModel)]='profile.firstName'>
                         <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
                             <div *ngIf="f.firstName.errors.required">First Name is required</div>
@@ -31,8 +30,7 @@
                     <div class="form-group col-5">
                         <label>Last Name</label>
                         <input type="text" formControlName="lastName" class="form-control"
-                            [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" 
-                            [(ngModel)]='profile.lastName'>
+                            [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" [(ngModel)]='profile.lastName'>
                         <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
                             <div *ngIf="f.lastName.errors.required">Last Name is required</div>
                         </div>
@@ -42,8 +40,7 @@
                     <div class="form-group col">
                         <label>Date of Birth</label>
                         <input type="date" formControlName="dob" class="form-control"
-                            [ngClass]="{ 'is-invalid': submitted && f.dob.errors }" 
-                            [(ngModel)]='profile.dob'>
+                            [ngClass]="{ 'is-invalid': submitted && f.dob.errors }" [(ngModel)]='profile.dob'>
                         <div *ngIf="submitted && f.dob.errors" class="invalid-feedback">
                             <div *ngIf="f.dob.errors.required">Date of Birth is required</div>
                             <div *ngIf="f.dob.errors.pattern">Date of Birth must be a valid date in the format
@@ -54,8 +51,7 @@
                     <div class="form-group col">
                         <label>Email</label>
                         <input type="text" formControlName="email" class="form-control"
-                            [ngClass]="{ 'is-invalid': submitted && f.email.errors }" 
-                            [(ngModel)]='profile.email'>
+                            [ngClass]="{ 'is-invalid': submitted && f.email.errors }" [(ngModel)]='profile.email'>
                         <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
                             <div *ngIf="f.email.errors.required">Email is required</div>
                             <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
@@ -66,8 +62,7 @@
                     <div class="form-group col">
                         <label>Password</label>
                         <input type="password" formControlName="password" class="form-control"
-                            [ngClass]="{ 'is-invalid': submitted && f.password.errors }" 
-                            [(ngModel)]='profile.password'>
+                            [ngClass]="{ 'is-invalid': submitted && f.password.errors }" [(ngModel)]='profile.password'>
                         <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
                             <div *ngIf="f.password.errors.required">Password is required</div>
                             <div *ngIf="f.password.errors.minlength">Password must be at least 8 characters</div>
@@ -86,9 +81,10 @@
                 <div class="form-group form-check">
                     <input type="checkbox" formControlName="acceptTerms" id="acceptTerms" class="form-check-input"
                         [ngClass]="{ 'is-invalid': submitted && f.acceptTerms.errors }" />
-                    <label for="acceptTerms" class="form-check-label">I understand the Automobile Club de 
+                    <label for="acceptTerms" class="form-check-label">I understand the Automobile Club de
                         l'Ouest will send me news and offers on behalf of its partners and sponsors.</label>
-                    <div *ngIf="submitted && f.acceptTerms.errors" class="invalid-feedback">Please check the box to proceed
+                    <div *ngIf="submitted && f.acceptTerms.errors" class="invalid-feedback">Please check the box to
+                        proceed
                     </div>
                 </div>
                 <div class="text-center">
