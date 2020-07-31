@@ -1,6 +1,6 @@
 <div class="container color col-md-4 my-5 ">
     <h1 class="text-center display-3">LOGIN</h1>
-    <form class="form-group" [formGroup]='loginForm' (ngSubmit)='login(loginData)'>
+    <form class="form-group" [formGroup]='loginForm' (ngSubmit)='login(loginData) '>
         <div class="">
             <label class="form-label">Enter your Registered Email</label>
         </div>
@@ -29,7 +29,7 @@
     </form>
 </div>
 <div class="container fluid text-center">
-    <button class="btn" type="submit" disabled>
+    <button class="btn" type="submit" disabled routerLink='/grandstand'>
         <h2 class="display-3 text-white">GRANDSTAND SEATING LAYOUT</h2>
     </button>
 </div>
